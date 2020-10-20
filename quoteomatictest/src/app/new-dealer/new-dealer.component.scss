@@ -1,0 +1,65 @@
+.common-btn {
+    background-color: #F7255A;
+    border-color: #F7255A;
+    color: white;
+ }
+ .common-btn:hover{
+     color:white;
+ }
+
+ .box-color {
+    color: #8A8A8A;
+    background-color: #1C1C1E;
+    border-color:  #1C1C1E;
+}
+
+.label-color {
+    color: #8A8A8A;
+}
+
+.spin-style {
+    color: white;
+}
+
+.label-color-table {
+    color: #b3aeae;
+}
+
+.popup-background {
+    color: #8A8A8A;
+    background-color: #25262C;
+    border-color:  #25262C;
+}
+
+.popup-footer {
+    float: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.align-img  {
+    width: 50px;
+    height: 50px;
+}
+
+ .card-align {
+    margin-top: 30px;
+ }
+
+ @media only screen and (max-width: 320px) {
+    .card-align {
+        margin-top: 67px;
+     }
+ }
+
+ @media only screen and (max-width: 480px) {
+    .card-align {
+        margin-top: 67px;
+     }
+ }
+
+ @media only screen and (max-width: 768px) {
+    .card-align {
+        margin-top: 67px;
+     }
+ }

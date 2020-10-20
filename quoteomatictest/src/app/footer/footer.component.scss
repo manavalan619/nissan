@@ -1,0 +1,197 @@
+footer.grid-row.bleed {
+    max-width: 100%;
+    background-color: #343434;
+    margin-right: 15px;
+    width: 100%
+}
+.c_013 .row, .grid-row {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.c_054-3 {
+    background-color: #343434;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.custome-service{
+    margin-left: -18px;
+}
+
+.dark-footer {
+    margin-top: -17px;padding-bottom: 0px;
+}
+.dark-footer-left {
+    margin-top: -37px;
+}
+
+.dark-footer-right {
+    margin-top: -25px;
+}
+
+.dark-footer-content-text-right {
+    color: #8a8a8a; padding-right: 25px;
+}
+
+.dark-footer-content-text-left {
+    color: #8a8a8a;
+}
+
+.footer-options {
+    float: left;
+    text-align: left;
+    width: 50%;
+    background: 0 0;
+}
+
+.coloumn-3{
+    float: left;
+    font-family: "Nissan Bold","Nissan Regular",Verdana,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.coloumn-4{
+    float: right;
+    font-family: "Nissan Bold","Nissan Regular",Verdana,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.footerhead {
+    max-width: 100%;
+    color: white;
+    padding-top: 25px;
+}
+
+.coloumn-3 a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #8a8a8a;
+    transition: all .3s;
+}
+
+.footer-items a span {
+    text-decoration: none;
+    padding: 0 10px;
+    transition: all .3s;
+}
+
+
+.footer-align p {
+    text-decoration: none;
+    padding: 0 10px;
+    transition: all .3s;
+}
+
+.coloumn-4 a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #8a8a8a;
+    transition: all .3s;
+}
+
+.footer-legal {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    background: 0 0;
+}
+
+.black {
+    background-color: #000;
+    padding-top: 50px;
+}
+
+.bgcolor{
+    background-color: #343434;
+}
+
+.c_025 {
+    text-align: right;
+}
+
+.element {
+    color: #c1c1c1;
+    font-size: 14px;
+}
+
+html {
+    font-size: .875em;
+    line-height: 1.57142857;
+}
+
+.c_054-3>div {
+    padding: 0 15px 20px;
+}
+
+.c_013 .row, .grid-row {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.c_013 .c_054-3 .row .col-12, .c_054-3 .c_013 .row .col-12, .c_054-3 .grid-row .col-12 {
+    position: relative;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+
+.c_054-3 dl.col-3 {
+    max-width: none;
+    min-width: 0;
+    width: 25%;
+}
+
+.footer-width {
+    margin-right: 0px;
+}
+
+.c_054-3 dl.col-3 {
+    max-width: none;
+    min-width: 0;
+    width: 25%;
+}
+
+.c_054-3>div dl>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.c_054-3 dl.col-3 {
+    max-width: none;
+    min-width: 0;
+    width: 25%;
+}
+
+.c_054-3 dl.col-3.last {
+    width: 25%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 300px) {
+    
+  }
+  
+  /* SMARTPHONES LANDSCAPE */
+  @media only screen and (max-width: 480px) {
+    .dark-footer-left {
+        display: none;
+    }
+    
+    .dark-footer-right {
+        display: none;
+    }
+  
+  }

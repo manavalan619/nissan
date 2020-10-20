@@ -1,0 +1,143 @@
+<div class="container top_align">
+    <div class="card card-align">
+        <div class="card-body">
+            <form>
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="tssavppercentage">Personal Title</label>
+                        <select class="custom-select" [(ngModel)]="user.personal_title" 
+                        [ngModelOptions]="{standalone: true}" id="personal_title" name="personal_title">
+                        </select>
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="tssavpcoverage">Partner Description</label>
+                        <input type="text" class="form-control" [(ngModel)]="user.partner_description" 
+                        [ngModelOptions]="{standalone: true}" id="tssavpcoverage" name="partner_descriptions">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="clientname">First Name</label>
+                        <input type="text" [(ngModel)]="user.first_name" class="form-control" 
+                        [ngModelOptions]="{standalone: true}"id="clientname" name="client_name">
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="avs">Address 1</label>
+                        <input type="text" [(ngModel)]="user.address_1" class="form-control" [ngModelOptions]="{standalone: true}"
+                        id="avs">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="clientname">Last Name</label>
+                        <input type="text" [ngModelOptions]="{standalone: true}"
+                        [(ngModel)]="user.last_name" class="form-control" id="clientname" name="client_name">
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="flexhours">Address 2</label>
+                        <input type="text" [(ngModel)]="user.address_2" 
+                        [ngModelOptions]="{standalone: true}"class="form-control" id="flexhours" name="quote.Flex_Hours">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="costperflexhour">Employee Type</label>
+                        <input type="text" [(ngModel)]="user.employee_type" 
+                        [ngModelOptions]="{standalone: true}" class="form-control" id="costperflexhour" name="Cost_per_Flex_Hour">
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="flexhours">Address 3</label>
+                        <input type="text" [ngModelOptions]="{standalone: true}"
+                        [(ngModel)]="user.address_3" class="form-control" id="flexhours" name="quote.Flex_Hours">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="tssavppercentage">Employee Position</label>
+                        <select class="custom-select" [ngModelOptions]="{standalone: true}" 
+                        [(ngModel)]="user.employee_position" id="tssavppercentage" name="quote.TSS_AVP_Coverage_percent">
+                        </select>
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="flexhours">Country/State</label>
+                        <input type="text" [(ngModel)]="user.country"
+                        [ngModelOptions]="{standalone: true}"class="form-control" id="flexhours" name="quote.Flex_Hours">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="flexhours">Email ID</label>
+                        <input type="text" [(ngModel)]="user.email"
+                        [ngModelOptions]="{standalone: true}" class="form-control" id="flexhours" name="quote.Flex_Hours">
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="flexhours">Post / ZIP code</label>
+                        <input type="text" [(ngModel)]="user.zipcode"
+                        [ngModelOptions]="{standalone: true}" class="form-control" id="flexhours" name="quote.Flex_Hours">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="flexhours">Supplier Code</label>
+                        <input type="text" [(ngModel)]="user.supplier_code"
+                        [ngModelOptions]="{standalone: true}"class="form-control" id="flexhours" name="quote.Flex_Hours">
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="key">Country ISO Code</label>
+                        <select class="custom-select" [(ngModel)]="user.country_iso_code"
+                        [ngModelOptions]="{standalone: true}" id="key" name="quote.key">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="flexhours">Territory</label>
+                        <input type="text" [(ngModel)]="user.territory"
+                        [ngModelOptions]="{standalone: true}"class="form-control" id="flexhours" name="quote.Flex_Hours">
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="key">Language ISO Code</label>
+                        <select class="custom-select"[(ngModel)]="user.language_iso_code"
+                        [ngModelOptions]="{standalone: true}"id="key" name="quote.key">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="flexhours">Phone Number</label>
+                        <input type="text" [(ngModel)]="user.phone" class="form-control"
+                        [ngModelOptions]="{standalone: true}" id="flexhours" name="quote.Flex_Hours">
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        <label for="optional">Fax Number</label>
+                        <input type="text"[(ngModel)]="user.fax" class="form-control" id="optional" 
+                        [ngModelOptions]="{standalone: true}" name="Optional_Prepared_By">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group mx-auto col-md-4">
+                        
+                    </div>
+                    <div class="form-group mx-auto col-md-4">
+                        
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="mx-auto col-md-4">
+                    </div>
+                    <div class="mx-auto col-md-4">
+                        <button type="button" class="btn btn-primary mr-2 my-2" (click)="submit()">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

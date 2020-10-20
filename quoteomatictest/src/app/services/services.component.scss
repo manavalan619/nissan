@@ -1,0 +1,452 @@
+// Custom css added //
+
+h2{
+    color: #000 !important;
+}
+.card-footer {
+    padding-top: 2.5px;
+    padding-bottom: 3px;
+    margin-left: 0px;
+}
+
+.card-footer-btn {
+    color: white;
+    background-color: #F7255A;
+}
+
+.btmfont-color {
+    margin-left: 20px;
+    text-align: left;
+    font: Regular 26px/33px Poppins;
+    letter-spacing: 0px;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 14px;
+}
+
+a{
+    color: #c3002f;
+}
+
+
+.card-footer-btn {
+    color: white;
+    padding-bottom: 0px;
+    padding-top: 0.5px;
+    margin-top: -46px;
+    margin-left: 148px;
+    background-color: #F7255A;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+@media only screen and (max-width : 320px) and (max-height : 570px) {
+       .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+
+}
+
+@media only screen and (min-width : 375px) and (max-width : 812px) {
+    .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+}
+
+@media only screen and (min-width : 375px) and (max-width : 812px) and (orientation : portrait) {
+       .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px) {
+        .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+      .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : portrait) {
+      .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+     .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+
+}
+
+
+@media only screen and (min-width: 834px) and (max-width: 1112px) {
+    .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation:portrait) {
+    .card{
+        width: 100% !important;
+    }
+    
+    .spacing{
+        margin-left: 1rem !important;
+        margin-top: 10rem !important;
+    }
+
+    .card-footer-btn {
+        color: white;
+        padding-bottom: 0px;
+        padding-top: 0.5px;
+        margin-top: -46px;
+        margin-left: 50px !important;
+        background-color: #F7255A;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .align{
+        margin-left: 3rem;
+        margin-bottom: -9rem;
+    }
+
+    .gep-mobilesecondtag {
+        margin-top: 1em !important;
+    }
+
+
+    .gep-ibm-resize-acoustic {
+        width: 109%;
+        height: 13em;
+        margin-left: 3em;
+        margin-top: 7em;
+    }
+}
+
+// Wordpress css added below //
+.gep-secondtag {    padding-left: 5em;
+}
+.gep-ibm-padding-top-3 {
+    padding-top: 60px!important;
+}
+.gep-ibm-padding-bottom-3 {
+    padding-bottom: 60px!important;
+}
+.gep-ibm-textcolor-systems-blue-5 {
+    color: #3c89ff;
+}

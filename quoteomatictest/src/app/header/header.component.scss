@@ -1,0 +1,329 @@
+#user {
+  margin-right: 8% !important;
+}
+
+.ibm-light {
+  background-color: white;
+  height: 75px;
+}
+
+.dropbtn {
+  background-color: #fcfffc;
+  color: #211e1e;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+
+
+}
+
+.nav-link{
+  color: #343434 !important;
+  font-weight: bold !important;
+}
+
+.black {
+  background-color: #000;
+  padding-top: 50px;
+  margin-top: -46px;
+  padding-bottom: 0px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.dropdown::after {
+  color: #c3002f;
+  margin-left: 8px;
+  height: auto;
+  overflow: hidden;
+  position: static;
+  width: auto;
+}
+
+.desktophide{
+  display: none ;
+}
+
+.nav-bar-align {
+    padding-top: 0px;
+    padding-right: 1rem;
+    padding-bottom: 0px;
+    padding-left: 1rem;
+}
+
+.gep-logo {
+  width: 105px;
+  height: auto !important;
+  margin-left: -16px;
+  margin-top: -22px;
+}
+
+.nav-bar-content {
+  margin-top: 0px;
+}
+
+.header-item-blk{
+  font-size: 12px;
+  color: white;
+}
+
+.usericon {
+  margin-right: 1%;
+  margin-left: 92%;
+}
+.menu-link {
+  display: inline;
+  padding: .5rem 1rem;
+}
+#logindropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.contentalign{
+  margin-left: -25px;
+}
+
+#loginhover-content {
+  display:none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.userlogo{
+  cursor: pointer;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #3b6caa;
+  
+}
+
+#logindropdown:hover #loginhover-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #e3e3e3;
+}
+
+.header-align {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.login-text {
+  color: white;
+}
+
+.quote-o-matic {
+  margin-left: 24px;
+}
+
+.quote-o-matic-color {
+  color:#343434;
+}
+.menu {
+  display: none;
+}
+
+
+.menu-bar {
+  display: none;
+}
+.nav-bar-content {
+  margin-top: 13px;
+}
+
+.nav-link{
+  color: #343434 !important;
+  font-weight: bold !important;
+}
+
+.right {
+  float: right;
+}
+
+.navbar-toggler-icon {
+  color: black;
+}
+@media only screen and (max-width: 360px) {
+  /* For Mobiles: */
+  .header-item-blk {
+    display: none;
+  }
+  .ibm-light {
+    background-color: gainsboro;
+  }
+
+  .gep-logo {
+    width: 93px;
+    margin-top: -5px;
+  }
+
+  .nav-bar-content {
+    margin-top: 12px;
+  }
+
+  .nav-link {
+    display: inline;
+    padding: .5rem 1rem;
+  }
+  
+  .mobilehide{
+    display: none !important;
+  }
+
+  .desktophide{
+    display: block;
+  }
+  .black {
+    display: none;
+  }
+
+  .product-dropdown {
+    display: inline;
+    margin-right: auto;
+  }
+  .menu-bar {
+    display: block;
+    background-color: gainsboro;
+  }
+
+}
+
+.nav-link{
+  color: #343434 !important;
+  font-weight: bold !important;
+}
+
+.header-nav-color {
+  color:#343434;
+}
+
+@media only screen and (max-width: 480px) {
+  /* For Tablets: */
+  .header-item-blk {
+    display: none;
+  }
+
+  .mobilehide{
+    display: none !important;
+  }
+
+  .nav-link {
+    display: inline;
+    padding: .5rem 1rem;
+  }
+  .nav-bar-content {
+    margin-top: 12px;
+  }
+
+  .black {
+    display: none;
+  }
+
+  .desktophide{
+    display: block;
+  }
+
+  .ibm-light {
+    background-color: gainsboro;
+  }
+  .gep-logo {
+    width: 93px;
+    margin-top: -5px;
+  }
+
+  .black {
+    display: none;
+  }
+  .product-dropdown {
+    display: inline;
+    margin-right: auto;
+  }
+
+  .menu-bar {
+    display: block;
+    margin-top: -55px;
+    background-color: gainsboro;
+  }
+  .ibm-light {
+    background-color: gainsboro;
+  }
+  .toggle-design {
+    margin-top: -8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For Desktop: */
+  .header-item-blk {
+    display: none;
+  }
+  
+  .mobilehide{
+    display: none !important;
+  }
+
+  .nav-link {
+    display: inline;
+    padding: .5rem 1rem;
+  }
+
+  .desktophide{
+    display: block;
+  }
+
+  .nav-bar-content {
+    margin-top: 12px;
+  }
+  
+  .black {
+    display: none;
+  }
+  .gep-logo {
+    width: 93px;
+    margin-top: -5px;
+  }
+  .product-dropdown {
+    display: inline;
+    margin-right: auto;
+  }
+
+  .menu-bar {
+    display: block;
+    margin-top: -55px;
+  }
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 425px) {
+//    #navbarNavDropdown ul{
+//        text-align: center;
+//    }
+//    
+    #navbarNavDropdown ul {
+          -webkit-nbsp-mode: unset !important;
+    }
+}
+
+

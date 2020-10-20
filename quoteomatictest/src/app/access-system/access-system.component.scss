@@ -1,0 +1,43 @@
+.btn{
+    background-color: #F7255A;
+    border-color: #F7255A;
+    color: white;
+  }
+.form-alignment {
+  width: 655px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.access-card-design {
+  color: #b6b1b1;
+  background-color: #25262c;
+}
+
+
+@media only screen and (max-width: 320px) {
+  .card-align {
+      margin-top: 67px;
+   }
+   .form-alignment {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card-align {
+      margin-top: 67px;
+   }
+   .form-alignment {
+    margin-left: 100px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-align {
+      margin-top: 67px;
+   }
+   .form-alignment {
+    margin-left: 100px;
+  }
+}

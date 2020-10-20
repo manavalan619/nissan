@@ -1,0 +1,26 @@
+<div class="top_align">
+    <div class="row row-card-design">
+        <div class="card card-user-guide">
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="btn btn-color button-design" (click)="access()">Access to Systems</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-color button-design" (click)="newDealer()">New dealer User Account</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-color button-design" (click)="newSupplier()">New Supplier Account</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-color button-design" (click)="errorApplication()">Error in application</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-card-design">
+        <div class="card card-user-guide executor" name="base-page">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+</div>

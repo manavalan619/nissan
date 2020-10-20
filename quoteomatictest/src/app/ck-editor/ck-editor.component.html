@@ -1,0 +1,28 @@
+<div class="form">
+  <label>Template Name:</label>
+  <input type="text" class="form-control" [(ngModel)]="templateName" placeholder='Enter name' style="width: 1045px"
+    [ngModelOptions]="{standalone: true}" />
+  <br />
+  <label>Description</label>
+  <input type="text" class="form-control" [(ngModel)]="descriptionDetails" placeholder='Enter description'
+    style="width: 1045px" [ngModelOptions]="{standalone: true}" />
+  <br />
+  <div class="card" style="width: 90%;">
+    <div id="editor"></div>
+  </div>
+  <br />
+</div>
+<div>
+  <button class="btn btn btn-primary savebutton" (click)="save()" *ngIf="!templateId">Save</button>
+  <button class="btn btn btn-primary savebutton" (click)="updateTemplate()" *ngIf="templateId">Update</button>
+  <button type="submit" class="btn btn btn-primary sendbutton" (click)="cancel()">Cancel</button>
+</div>
+
+<!-- <div>
+  <label>Template Name:</label>
+  <input type="text" [(ngModel)]="templateName" placeholder='Enter name' [ngModelOptions]="{standalone: true}"/>
+</div> -->
+
+
+<!-- <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor> -->
+<!-- <ckeditor [editor]="Editor" data="<p>Hello, world!</p>" (ready)="onReady($event)"></ckeditor> -->

@@ -1,0 +1,443 @@
+.title{
+    color: #fff;
+    background: 0 0;
+    background-image: initial;
+    font-size: 48px;
+    padding-bottom: 15px;
+    letter-spacing: .11px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    // font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+    font-style: Times;
+    line-height: 1;
+    word-wrap: break-word;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    animation-delay: 50ms;
+}
+.html {
+    color: #fff;
+    background: 0 0;
+    margin: 0;
+    font-size: .875em;
+    line-height: 1.57142857;
+    background-image: initial;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    font-family: "Nissan Regular",Verdana,Arial,sans-serif;
+}
+.carousel-slide {
+    position: relative;
+    box-sizing: border-box;
+}
+.textarea {
+    color: #343434;
+    font-family: "Nissan Regular",Verdana,Arial,sans-serif;
+}
+.content-wrapper {
+    position: relative;
+}
+
+.content-details {
+    width: 35%;
+    padding: 0;
+    margin: 35px 0 50px 50px;
+}
+.gep-text-block {
+    margin-top: -138px;
+    width: 305px;
+}
+
+div {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+.actions {
+    opacity: 0;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    pointer-events: all;
+}
+
+.link-group {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.takata {
+    color: #000;
+    background: 0 0;
+    font-size: 36px;
+    line-height: 32px;
+    padding-bottom: 15px;
+    letter-spacing: .11px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.cta-primary {
+    padding: .8571428571em 45px .8571428571em 20px;
+    border: 1px solid #c3002f;
+    background: #c3002f;
+    color: #fff;
+    font-family: "Nissan Regular","Nissan Regular",Verdana,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: .875em;
+    line-height: 1.28;
+    position: relative;
+    
+}
+
+.takata-primary {
+    padding: .8571428571em 45px .8571428571em 20px;
+    border: 1px solid #c3002f;
+    background: #c3002f;
+    color: #fff;
+    font-family: "Nissan Regular","Nissan Regular",Verdana,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: .875em;
+    line-height: 1.28;
+    position: relative;
+    margin-left: 500px;
+    
+}
+
+.cta-secondary {
+    padding: .8571428571em 45px .8571428571em 20px;
+    border: 1px solid #eee;
+    background: #eee;
+    color: #343434;
+    font-family: "Nissan Regular","Nissan Regular",Verdana,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: .875em;
+    line-height: 1.28;
+    position: relative;
+}
+
+.heading-group{
+    animation-name: fadeInUpSlideText;
+    font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.cta-primary:after {
+    font-size: 20px;
+    color: #fff;
+    right: 20px;
+    top: 50%;
+    overflow: hidden;
+    margin-top: -.5em;
+    position: absolute;
+    font-size: .7857142857rem;
+}
+
+.grid-row {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grid-row:before {
+    content: " ";
+    display: table;
+}
+
+.grid-row::after{
+    clear: both;
+}
+
+.image-div{
+    padding: 1.2857142857em 0;
+    margin: 0;
+    max-width: inherit;
+}
+
+.image-size {
+    width: 242px;
+}
+
+.image1-size {
+    width: 220px;
+}
+
+.h4{
+    color: #343434;
+    font-size: 14px;
+    font-family: "Nissan Bold","Nissan Regular",Verdana,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    display: table-header-group;
+    letter-spacing: .11px;
+    font-style: bold;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.image1-h4 {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Nissan Bold","Nissan Regular",Verdana,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    display: table-header-group;
+    letter-spacing: .11px;
+    font-style: bold;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.discover-group {
+    margin: 15px;
+}
+
+.discover-group a::after {
+    overflow: visible;
+    font-size: .7857142857rem;
+    color: #c3002f;
+    top: 50%;
+    overflow: hidden;
+    position: relative;
+    padding-left: 10px;
+    right: 0;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.discover-a {
+    color: #343434;
+    background: 0 0;
+    width: auto;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0;
+}
+
+.img-text{
+    color: #343434;
+    display: block;
+    word-wrap: break-word;
+    font-size: 2em;
+    letter-spacing: .11px;
+    font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.gep-ibm-resize {
+    height: 550px;
+}
+
+.coloumn-2{
+    float: left;
+    margin-right: 0;
+    width: 25%;
+    padding: 0 15px;
+}
+
+.image1-coloumn-2{
+    float: left;
+    margin-right: 0;
+    width: 20%;
+    padding: 0 0px;
+}
+
+
+.coloumn-3{
+    float: left;
+    font-family: "Nissan Bold","Nissan Regular",Verdana,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.vehicles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+    text-align: center;
+    padding: 30px 0 0;
+}
+
+.coloumn-3 a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #000;
+    transition: all .3s;
+}
+
+.coloumn-3-3{
+    float: left;
+    margin-right: 0;
+    width: 14%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.col-4-cars {
+    font-family: "Nissan Bold","Nissan Regular",Verdana,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.title-col-2 {
+    float: left;
+}
+.title-heading-group{
+    padding-top: 14px;
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    padding-top: 0;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.takata-call {
+    margin-top: -302px;
+}
+
+.discover-range {
+    padding-left: 25px;padding-bottom: 11px;
+}
+.passager-cars {
+    padding-left: 15px;
+}
+
+.passager-cars-color {
+    color: #c3002f;
+}
+
+.lvcs {
+    margin-left: -39px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.image1-size h4 {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+}
+@media only screen and (min-width: 301px) and (max-width: 320px) {
+    .takata-primary {
+        margin-left: unset;
+        
+    }
+    .image1-coloumn-2{
+        width: unset;
+    }
+    .coloumn-2{
+        width: unset;
+    }
+  }
+
+@media only screen and (max-width: 300px) {
+    .takata-primary {
+        margin-left: unset;
+        
+    }
+    .image1-coloumn-2{
+        width: unset;
+    }
+    .coloumn-2{
+        width: unset;
+    }
+    .image1-size {
+        width: 100vw;
+    }
+    .image-size {
+        width: 88vw;
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .takata-primary {
+        margin-left: 277px;
+    }
+    .image1-coloumn-2{
+        width: unset;
+    }
+    .coloumn-2{
+        width: unset;
+    }
+    .image-size {
+        width: 88vw;
+    }
+  }
+  
+  /* SMARTPHONES LANDSCAPE */
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    .takata-primary {
+        margin-left: unset;
+        
+    }
+    .image1-coloumn-2{
+        width: unset;
+    }
+    .coloumn-2{
+        width: unset;
+    }
+    .more-information {
+        margin-left: 100px;
+    }
+    .image1-size {
+        width: 100vw;
+    }
+    .image-size {
+        width: 88vw;
+    }
+    .card-mobile-res {
+        width: 100vh;
+    }
+    .card-align-mob-res {
+        margin-top: 100px;
+    }
+  
+  }

@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-body">
+    <form>
+      <div class="form-row">
+        <div class="form-group mx-auto col-md-4">
+          <label for="clientname">Quote-Type-Name</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="quoteType.quote_type_name" name="quote_type_name" >
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group mx-auto col-md-4">
+          <label for="clientname">Description</label>
+          <input type="text" class="form-control" id="description" [(ngModel)]="quoteType.description" name="description">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group mx-auto col-md-4">
+          <label for="clientname">Notes</label>
+          <textarea type="text" class="form-control" id="note" [(ngModel)]="quoteType.notes" name="notes"></textarea>
+        </div>
+      </div>
+    </form> 
+  </div>
+  <div class="form-row">
+    <div class="form-group mx-auto col-md-2.5">
+        <button *ngIf="quoteType._id || quoteTypeId" type="button" class="btn"(click)="next()">Next</button>&nbsp;&nbsp;
+        <button *ngIf="!quoteTypeId" type="button" class="btn"(click)="save()">Save</button>&nbsp;&nbsp;
+        <button *ngIf="quoteTypeId" type="button" class="btn"(click)="update()">Update</button>&nbsp;&nbsp;
+        <button  type="button" class="btn"(click)="cancel()">cancel</button>
+    </div>
+  </div>
+</div>

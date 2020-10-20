@@ -1,0 +1,30 @@
+<div class="accordion col-md-9 mt-5 mb-5" id="accordionExample">
+  <div class="">
+    <button type="button" class="btn btn-edit-create mb-2" (click)="createCalculation()">Create new calculation</button>
+  </div>
+  <div class="card">
+    <div class="" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn-block text-left collopse-title collopse-color" type="button" data-toggle="collapse"
+          data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          My calculations
+        </button>
+      </h2>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="row card-row">
+          <div class="card mr-3 my-3 mob-res" style="width: 17.5rem;" *ngFor="let data of calculationData">
+            <img src="../../assets/img/upload.png" class="card-img-top" alt="sample">
+            <div class="card-body">
+              <h4 class="card-title">{{data.name}}</h4>
+              <p class="card-text para mb-5">{{data.description}}</p>
+              <button type="button" class="btn btn-edit-create mr-1 mt-2" (click)="edit(data)">Edit</button>
+              <button type="button" class="btn btn-delete mt-2">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

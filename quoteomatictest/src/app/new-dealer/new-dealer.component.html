@@ -1,0 +1,180 @@
+<div class="card-body">
+    <button class="btn btn-primary" id="openModalButton" [hidden]="true" data-toggle="modal"
+        data-target="#largeModal">Large modal</button>
+    <div id="largeModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content popup-background">
+                <div class="container">
+                    <div class="modal-body row">
+                        <div class="form-group mx-auto">
+                            <img src="assets/img/checked.svg" class="align-img" />
+                        </div>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="form-group mx-auto col-md-6" id="body-model">
+                            <p class="text-center">Your request for access is captured and {{action}} the ticket your
+                                Incident
+                                number: {{incidentNumber}}</p>
+                        </div>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="form-group mx-auto">
+                            <button class="btn common-btn popup-footer" data-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form>
+        <ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">  
+            <p class="spin-style">Please Wait. </p>  
+        </ngx-spinner>
+        <div *ngIf="incidentNumber" class="form-row">
+            <div class="form-group mx-auto col-md-12">
+                <label class="label-color-table"><b>Incident Number: {{incidentNumber}}</b></label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group mx-auto col-md-4">
+                <select class="custom-select box-color" [(ngModel)]="user.personal_title"
+                    [ngModelOptions]="{standalone: true}" id="personal_title" name="personal_title">
+                    <option>Personal Title</option>
+                </select>
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [(ngModel)]="user.supplier_code" placeholder="Supplier Code"
+                    [ngModelOptions]="{standalone: true}" class="form-control box-color" id="flexhours"
+                    name="quote.Flex_Hours">
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <select class="custom-select box-color" [(ngModel)]="user.urgency" [ngModelOptions]="{standalone: true}"
+                    id="urgency" name="urgency">
+                    <option [ngValue]=''>Urgency</option>
+                    <option [ngValue]='1' [selected]="1==urgency">1-High</option>
+                    <option [ngValue]='2' [selected]="2==urgency">2-Medium</option>
+                    <option [ngValue]='3' [selected]="3==urgency">3-Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [(ngModel)]="user.firstname" class="form-control box-color" placeholder="First Name"
+                    [ngModelOptions]="{standalone: true}" id="clientname" name="client_name">
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [(ngModel)]="user.territory" placeholder="Territory"
+                    [ngModelOptions]="{standalone: true}" class="form-control box-color" id="flexhours"
+                    name="quote.Flex_Hours">
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <select class="custom-select box-color" [(ngModel)]="user.state" [ngModelOptions]="{standalone: true}"
+                    id="state" name="state">
+                    <option>State</option>
+                    <option [ngValue]='1' [selected]="1==state">New</option>
+                    <option [ngValue]='2' [selected]="2==state">In Progress</option>
+                    <option [ngValue]='3' [selected]="3==state">On Hold</option>
+                    <option [ngValue]='4' [selected]="4==state">Resolved</option>
+                    <option [ngValue]='5' [selected]="5==state">Closed</option>
+                    <option [ngValue]='6' [selected]="6==state">Cancelled</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [ngModelOptions]="{standalone: true}" placeholder="Last Name"
+                    [(ngModel)]="user.lastname" class="form-control box-color" id="clientname" name="client_name">
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [(ngModel)]="user.phonenumber" class="form-control box-color"
+                    placeholder="Phone Number" [ngModelOptions]="{standalone: true}" id="flexhours"
+                    name="quote.Flex_Hours">
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [(ngModel)]="user.country" placeholder="Country/State"
+                    [ngModelOptions]="{standalone: true}" class="form-control box-color" id="flexhours"
+                    name="quote.Flex_Hours">
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group mx-auto col-md-4">
+                <select class="custom-select box-color" [ngModelOptions]="{standalone: true}"
+                    [(ngModel)]="user.employee_type" id="tssavppercentage" name="quote.TSS_AVP_Coverage_percent">
+                    <option>Assignment Group</option>
+                    <option *ngFor="let group of AssignmentGroups; let i = index" [ngValue]="group.sys_id" [selected]="group.sys_id==user.employee_type">{{group.name}}</option>
+                </select>
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [(ngModel)]="user.faxnumber" class="form-control box-color" id="optional"
+                    placeholder="Fax Number" [ngModelOptions]="{standalone: true}" name="Optional_Prepared_By">
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [(ngModel)]="user.zipcode" placeholder="Post / ZIP code"
+                    [ngModelOptions]="{standalone: true}" class="form-control box-color" id="flexhours"
+                    name="quote.Flex_Hours">
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group mx-auto col-md-4">
+                <select class="custom-select box-color" [ngModelOptions]="{standalone: true}"
+                    [(ngModel)]="user.employee_position" id="tssavppercentage" name="quote.TSS_AVP_Coverage_percent">
+                    <option>Contact Type</option>
+                    <option [selected]="contactType == 'none'">--None--</option>
+                    <option [selected]="contactType == 'email'">Email</option>
+                    <option [selected]="contactType == 'phone'">Phone</option>
+                    <option [selected]="contactType == 'self-service'">Self-service</option>
+                    <option [selected]="contactType == 'walk-in'">Walk-in</option>
+                </select>
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" class="form-control box-color" placeholder="Partner Description"
+                    [(ngModel)]="user.partner_description" [ngModelOptions]="{standalone: true}" id="tssavpcoverage"
+                    name="partner_descriptions">
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <select class="custom-select box-color" [(ngModel)]="user.country_iso_code"
+                    [ngModelOptions]="{standalone: true}" id="key" name="quote.key">
+                    <option>Country ISO Code</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group mx-auto col-md-4">
+                <input type="text" [(ngModel)]="user.email" placeholder="Email ID" [ngModelOptions]="{standalone: true}"
+                    class="form-control box-color" id="flexhours" name="quote.Flex_Hours">
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <select class="custom-select box-color" [(ngModel)]="user.caller_id"
+                    [ngModelOptions]="{standalone: true}" id="caller_id" name="caller_id">
+                    <option>Caller</option>
+                    <option *ngFor="let caller of Callers; let i = index" [ngValue]="caller.sys_id"
+                    [selected]="caller.sys_id==user.caller_id">{{caller.name}}</option>
+                </select>
+            </div>
+            <div class="form-group mx-auto col-md-4">
+                <select class="custom-select box-color" [(ngModel)]="user.language_iso_code"
+                    [ngModelOptions]="{standalone: true}" id="key" name="quote.key">
+                    <option>Language ISO Code</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="mx-auto col-md-12">
+                <button *ngIf="!sysId" type="button" class="btn common-btn mr-2 my-2" (click)="submit()">Submit</button>
+                <button *ngIf="sysId" type="button" class="btn common-btn mr-2 my-2" (click)="update()">Update</button>
+                <button *ngIf="sysId" type="button" class="btn common-btn mr-2 my-2" (click)="delete()">Delete</button>
+                <button type="button" class="btn common-btn my-2" (click)="cancel()">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>

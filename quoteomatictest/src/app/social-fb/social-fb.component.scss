@@ -1,0 +1,64 @@
+h2{
+    color: #000 !important;
+}
+
+.card{
+    width: 46%;
+}
+
+.spacing{
+    margin-left: 0.6rem;
+    margin-top: 0rem;
+}
+
+.card-footer {
+    padding-top: 2.5px;
+    padding-bottom: 3px;
+    margin-left: 0px;
+}
+
+.card-footer-btn {
+    color: white;
+    background-color: #F7255A;
+}
+
+.font-color {
+    margin-left: 20px;
+    text-align: left;
+    font: Regular 26px/33px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 14px;
+}
+
+
+.btmfont-color {
+    margin-left: 20px;
+    text-align: left;
+    font: Regular 26px/33px Poppins;
+    letter-spacing: 0px;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 14px;
+}
+
+a{
+    color: #c3002f;
+}
+
+@media only screen and (max-width: 480px) {
+    .spacing {
+        width: 100vh;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .spacing {
+        width: 100vh;
+        margin-top: 1rem;
+    }
+}

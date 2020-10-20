@@ -1,0 +1,209 @@
+.dashboardcard {
+  padding-top: 5%;
+  height: 113vh;
+}
+
+.adminimg {
+  width: 20%;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+.card {
+  margin-left: 7%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+@media only screen and (max-width : 320px) and (max-height : 570px) {
+
+  .cardmobile {
+    width: 100%;
+    margin-top: 25%;
+    margin-right: -33%;
+  }
+
+  .card{
+      margin-left: 17% !important;
+  }
+
+  .adminimg {
+    width: 60%;
+    margin-left: 18%;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width : 375px) and (max-width : 812px) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}
+
+@media only screen and (min-width : 375px) and (max-width : 812px) and (orientation : portrait) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : portrait) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1112px) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation:portrait) {
+    .cardmobile {
+        width: 100%;
+        margin-top: 25%;
+        margin-right: -33%;
+      }
+    
+      .card{
+          margin-left: 17% !important;
+      }
+    
+      .adminimg {
+        width: 60%;
+        margin-left: 18%;
+        cursor: pointer;
+      }
+}

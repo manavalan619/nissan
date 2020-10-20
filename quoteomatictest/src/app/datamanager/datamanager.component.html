@@ -1,0 +1,54 @@
+<!-- <div class="row card-row row-button">
+    <div class="card mr-3 my-3 mob-res">
+        <div class="card-body">
+            <button class="btn btn-primary row-button" for="file " type="file" id="file"
+                (change)="handleFileInput($event.target.files)"
+                (click)=openImportModal()>{{ 'Import File' | i18next }}</button>
+        </div>
+    </div>
+</div> -->
+<div class="card">
+  <div class="card-body">
+    <form>
+      <div class="form-row">
+        <div class="form-group mx-auto col-md-4">
+          <button class="btn btn-primary row-button" for="file " type="file" id="file"
+            (change)="handleFileInput($event.target.files)"
+            (click)=openImportModal()>{{ 'Import File' | i18next }}</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayImportModel}">
+  <div class="modal-dialog modal-lg" role="dialog">
+    <div class="modal-content">
+      <div class="container">
+        <form class="m-2">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="file">choose csv file to import </label>
+                <input #myInput type="file" name="file" ng2FileSelect [uploader]="uploader" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+          <button type="button" class="btn btn-success btn-s uploadButton" (click)="uploader.uploadAll()"
+            [disabled]="!uploader.getNotUploadedItems().length"> {{ 'Import' | i18next }} </button>
+          <button type="button" class="btn button-close cancelbutton"
+            (click)="closeImportModal()">{{ 'Cancel' | i18next }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

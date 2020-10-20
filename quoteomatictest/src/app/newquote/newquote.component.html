@@ -1,0 +1,139 @@
+<div class="card">
+  <div class="card-body">
+<form>
+
+   <div class="form-row">
+    <div class="form-group mx-auto col-md-4">
+      <label for="clientname">Client Name</label>
+       <input type="text" class="form-control" id="clientname"  [(ngModel)]="quote.client_name" name="client_name" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group mx-auto col-md-4">
+      <label for="tssavpcoverage">TSS AVP Coverage</label>
+      <input type="text" class="form-control" id="tssavpcoverage"  [(ngModel)]="quote.TSS_AVP_Coverage" name="TSS_AVP_Coverage" [ngModelOptions]="{standalone: true}">
+    </div>
+  </div>
+
+    <div class="form-row">
+    <div class="form-group mx-auto col-md-4">
+     <label for="tssavppercentage">TSS AVP Coverage%</label>
+    <select class="custom-select" id="tssavppercentage"  [(ngModel)]="quote.Coverage_percent" name="quote.Coverage_percent" [ngModelOptions]="{standalone: true}">
+      <option>{{quote.Coverage_percent}}</option>
+      <option>20%</option>
+      <option>30%</option>
+      <option>40%</option>
+      <option>50%</option>
+    </select>
+    </div>
+    <div class="form-group mx-auto col-md-4">
+      <label for="avs">Additional Logo Technology(AVS)</label>
+      <input type="text" class="form-control" id="avs">
+    </div>
+  </div>
+
+    <div class="form-row">
+    <div class="form-group mx-auto col-md-4">
+      <label for="additionalavppercentage">Additional AVP Coverage%</label>
+    <select class="custom-select" id="additionalavppercentage">
+      <option>10%</option>
+      <option>20%</option>
+      <option>30%</option>
+      <option>40%</option>
+      <option>50%</option>
+    </select>
+    </div>
+    <div class="form-group mx-auto col-md-4">
+      <label for="flexhours">#Flex hours</label>
+      <input type="text" class="form-control" id="flexhours"  [(ngModel)]="quote.Flex_Hours" name="quote.Flex_Hours" [ngModelOptions]="{standalone: true}">
+    </div>
+  </div>
+
+    <div class="form-row">
+    <div class="form-group mx-auto col-md-4">
+      <label for="costperflexhour">Cost per Flex Hour</label>
+      <input type="text" class="form-control" id="costperflexhour" [(ngModel)]="quote.Cost_per_Flex_Hour" name="Cost_per_Flex_Hour" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group mx-auto col-md-4">
+      <label for="propdate">Prop Valid Date(MM/DD/YYYY)</label>
+      <input type="date" [(ngModel)]="quote.Prop_Valid_Date" class="form-control" id="propdate" [ngModelOptions]="{standalone: true}">
+    </div>
+  </div>
+
+     <div class="form-row">
+    <div class="form-group mx-auto col-md-4">
+      <label for="startdate">Start Date(MM/DD/YYYY)</label>
+      <input type="date" class="form-control" id="startdate" [(ngModel)]="quote.Start_Date" name="quote.Start_Date" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group mx-auto col-md-4">
+     <label for="proposalgrossprofit">Proposal Gross Profit%</label>
+    <select class="custom-select" id="proposalgrossprofit" [(ngModel)]="quote.Proposal_Gross_Profit_Percent" name="quote.Proposal_Gross_Profit_Percent" [ngModelOptions]="{standalone: true}">
+      <option>44%</option>
+      <option>45%</option>
+      <option>46%</option>
+      <option>47%</option>
+      <option>48%</option>
+    </select>
+    </div>
+  </div>
+
+    <div class="form-row">
+    <div class="form-group mx-auto col-md-4">
+      <label for="contractduration">Contract Duration</label>
+    <select class="custom-select" id="contractduration" [(ngModel)]="quote.Contract_Duration" name="quote.Contract_Duration" [ngModelOptions]="{standalone: true}">
+      <option>12 Months</option>
+      <option>11 Months</option>
+      <option>10 Months</option>
+      <option>09 Months</option>
+      <option>08 Months</option>
+
+    </select>
+    </div>
+    <div class="form-group mx-auto col-md-4">
+     <label for="offeringprograrm">Offering/Program</label>
+    <select class="custom-select" id="offeringprograrm">
+      <option>Best Effect Support</option>
+      <option>Others</option>
+    </select>
+    </div>
+  </div>
+
+   <div class="form-row">
+    <div class="form-group mx-auto col-md-4">
+     <label for="countryrates">Country/Rates</label>
+    <select class="custom-select" id="countryrates" [(ngModel)]="quote.Country_Rates" name="quote.Country_Rates" [ngModelOptions]="{standalone: true}">
+      <option>US</option>
+      <option>India</option>
+      <option>Mexico</option>
+      <option>Spain</option>
+      <option>UK</option>
+      <option>Others</option>
+    </select>
+    </div>
+    <div class="form-group mx-auto col-md-4">
+      <label for="optional">Optional/Prepared By</label>
+      <input type="text" class="form-control" id="optional" [(ngModel)]="quote.Optional_Prepared_By" name="Optional_Prepared_By" [ngModelOptions]="{standalone: true}">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group mx-auto col-md-4">
+    Price: {{ price }}
+    </div>
+    <div class="form-group mx-auto col-md-4">
+      Cost: {{ cost }}
+    </div>
+  </div>
+
+    <div class="form-row">
+    <div class="mx-auto col-md-4">
+    </div>
+    <div class="mx-auto col-md-4">
+        <button type="button" class="btn common-btn mr-2 my-2" (click) = "calculate()">Calculate</button>
+        <button type="button" class="btn common-btn mr-2 my-2" (click) = "generate()">Generate Proposal</button>
+        <button type="button" class="btn common-btn my-2" (click) = "exit()">Exit</button>
+    </div>
+  </div>
+
+
+</form>  
+</div>
+</div>

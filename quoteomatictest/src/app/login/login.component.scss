@@ -1,0 +1,207 @@
+body {
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+.bg_img {
+  background-image: url("../../assets/img/nissan-login-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+}
+
+.alert-align{
+  margin-left: 0px;
+}
+
+.hideeye {
+  margin-top: -30px;
+  text-align: right;
+  float: right;
+  padding-right: 10px;
+}
+
+.form {
+  padding: 3% 6% 3% 6%;
+}
+
+.login-or {
+  position: relative;
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+
+.hr-or {
+  background-color: #cdcdcd;
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+h3 {
+  text-align: center;
+  line-height: 300%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 510px;
+  margin-top: 10%;
+  padding-top: 20px;
+  border-radius: 19px;
+  border: 2px solid #d5dbe0;
+}
+
+.login {
+  width: 30%;
+}
+
+.nissan-login-logo {
+  margin-top: -1666px;width: 10%;margin-left: 26px;
+}
+
+.nissan-b2b-logo {
+  position: absolute; right: 60px; margin-top: -873px;
+}
+.nissan-title-form {
+  margin-top: -1394px;
+  margin-left: 65px;
+}
+.nissan-text-box {
+  margin-top: -659px;margin-right: 155px;
+}
+
+.nissan-user-id {
+  font: small; 
+  color: #ffffff;
+  padding-right: 19%;
+}
+
+.nissan-password {
+  font: small;
+  color: #ffffff;
+}
+
+.nissan-email-text {
+  height: 28px; border: 0; font-size: 16px;margin-left: 6%;
+}
+
+.nissan-password-text {
+  height: 28px; border: 0;margin-left: 3%;
+}
+
+.form-text-box {
+  margin-right: 359px;
+}
+
+.nissan-login-button {
+  background-image:url('../../assets/img/b2b_login.jpg');
+  border: 0;
+  width: 90; 
+  height: 33; 
+  color: #FFFFFF;
+  font-size: 18; 
+  margin-left: 6%;
+}
+
+.hide-eye {
+  float: right;
+  margin-top: -8%;
+  margin-right: 4%;
+}
+
+.center {
+  text-align: center;
+}
+@media only screen and (max-width: 300px) {
+  .bg_img {
+    height: 856px;
+  }
+  .nissan-login-logo {
+    width: 17%;
+    margin-left: unset;
+  }
+  .nissan-b2b-logo {
+    width: unset;
+    right: 7px;
+  }
+  .nissan-title-form {
+    margin-left: 22px;
+    width: 357px;
+  }
+  .form-row {
+    width: 221px;
+  }
+  .nissan-text-box {
+    margin-left: 27px;
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+  .bg_img {
+    height: 856px;
+  }
+  .nissan-title-form {
+    margin-left: 22px;
+    width: 357px;
+  }
+  .nissan-login-logo {
+    width: 17%;
+    margin-left: unset;
+  }
+  .nissan-b2b-logo {
+    width: unset;
+    right: 7px;
+  }
+  .form-row {
+    width: 221px;
+  }
+  .nissan-text-box {
+    margin-left: 27px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .bg_img {
+    height: 856px;
+  }
+  .nissan-title-form {
+    margin-left: 22px;
+    width: 357px;
+  }
+  .nissan-login-logo {
+    width: 17%;
+    margin-left: unset;
+  }
+  .nissan-b2b-logo {
+    width: unset;
+    right: 7px;
+  }
+  .form-row {
+    width: 590px;
+    margin-left: -18px;
+  }
+  .nissan-text-box {
+    margin-left: 27px;
+  }
+}

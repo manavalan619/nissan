@@ -1,0 +1,30 @@
+.label-color {
+    color: #b6b1b1;
+    background-color: #1C1C1E;
+}
+
+.anchor-color {
+    color: #b6b1b1;
+}
+
+.table-header-color {
+    color: #e2dadd;
+    background-color:#F7255A;
+}
+
+.table-row-padd {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.ticket-btn {
+    background-color:#F7255A;
+    color: white;
+}
+
+.spin-style {
+    color: white;
+}
+
+.tableFixHead { overflow-y: auto; height: 500px; }
+.tableFixHead thead th { position: sticky; top: 0; }

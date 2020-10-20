@@ -1,0 +1,28 @@
+
+#accordionExample{
+    margin: auto;
+}
+.para {
+    font-size: 12px;
+    line-height: inherit;
+}
+.btn-delete{
+    background-color: unset;
+    border-color: #b7b3b3;
+}
+.btn-edit-create{
+   background-color: #2196f4;
+   border-color: #2196f4;
+   color: white;
+}
+.btn-edit-create:hover{
+    color:white;
+}
+.card-row {
+    margin: unset;
+}
+.collopse-title{
+    font-size: smaller;
+    color: white;
+    background-color: #2196f4;
+}

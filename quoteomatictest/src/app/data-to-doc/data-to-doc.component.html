@@ -1,0 +1,33 @@
+<div class="accordion col-md-9 mt-5 mb-5" id="accordionExample">
+    <div class="">
+        <button type="button" class="btn btn-edit-create mb-2" (click)="newTemplate()">Create new Template</button>
+    </div>
+    <div class="card">
+        <div class="" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn-block text-left collopse-title collopse-color" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    My Templates
+                </button>
+            </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row card-row">
+                    <div class="card mr-3 my-3 mob-res" style="width: 17.5rem;" *ngFor="let item of template; let i = index">
+                        <img src="../../assets/img/upload.png" class="card-img-top" alt="sample">
+                        <div class="card-body">
+                            <h4 class="card-title">{{item.name}}</h4>
+                            <p class="card-text para">{{item.description}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-edit-create mr-1"
+                                (click)="templateEdit(item)">Edit</button>
+                            <button type="button" class="btn btn-delete ">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

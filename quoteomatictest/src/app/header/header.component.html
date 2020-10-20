@@ -1,0 +1,93 @@
+<div>
+  <div>
+    <div class='gep-secondtag black'>
+      <div class="header-align">
+        <div id='template-igluut' class="header-item-blk">
+          <a><span class='gep-footercontent header-item-blk' id='template-idme0w'><b>BUSINESS & FLEET</b></span></a>
+          <a><span class='gep-footercontent header-item-blk' id='template-ie5l1y'>BOOK A TEST DRIVE</span></a>
+          <a><span class='gep-footercontent header-item-blk' id='template-ifax4v'>FIND A DEALER</span></a>
+          <a><span class='gep-footercontent header-item-blk' id='template-ialb51'>CAR CONFIGURATOR</span></a>
+          <a><span class='gep-footercontent header-item-blk' id='template-ialb51'>MY VIRTUAL SHOWROOM</span></a>
+          <a><span class='gep-footercontent header-item-blk' id='template-ialb51'>LIVE CHAT</span></a>
+          <a><span class='gep-footercontent header-item-blk' id='template-ialb51'><b>MORE SHOPPING TOOLS</b></span></a>
+          <a [routerLink]="['/login']"><span class='Geppetto login-text'><b>LOGIN</b> TO YOU+NISSAN</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar nav-bar-align navbar-expand-lg navbar-light bg-light">
+    <div>
+      <img src="assets/img/nissan-logo-1.png" class='gep-logo'>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav col-md-11 nav-bar-ul">
+        <li class="nav-item">
+          <a class="nav-link menu-link " [routerLink]="['/service']"
+            *ngIf="isApplicable('service') && userId">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link menu-link  dropdown-toggle" id="navbarDropdownMenuLink"
+            *ngIf="isApplicable('admin') && userId" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Administration
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/admin">Admin</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  desktophide" *ngIf="!userId" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link   desktophide" *ngIf="userId" (click)="Logout()">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  desktophide" *ngIf="!userId" routerLink="/signup">Signup</a>
+        </li>
+         <li class='nav-item'>
+            <a class='nav-link menu-link' [routerLink]="['/announcement']">Announcement</a>
+        </li>
+        <!--  <li class='nav-item'>
+            <a class='nav-link menu-link' [routerLink]="['/landing']">Landing</a>
+           </li>
+         <li class='nav-item'>
+            <a class='nav-link menu-link' [routerLink]="['/nissanleaf']">Nissanleaf</a>
+           </li>
+         <li class='nav-item'>
+            <a class='nav-link menu-link' [routerLink]="['/products']">Products</a>
+           </li> -->
+      </ul>
+
+      <div class="mobilehide col-md-1" id="logindropdown">
+        <i class="fa fa-user-o fa-2x userlogo" aria-hidden="true"></i>
+        <div class=" contentalign" id="loginhover-content">
+          <a class="nav-link" *ngIf="!userId" routerLink="/login">Login</a>
+          <a class="nav-link" *ngIf="userId" (click)="Logout()">Logout</a>
+          <a class="nav-link" *ngIf="!userId" routerLink="/signup">Signup</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'top': '100px','display': confirmLangChangeModal}">
+  <div class="modal-dialog modal-sm" role="dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>language change cause you to re-login</p>
+      </div>
+      <div class="modal-footer" style="padding: 5px">
+        <button type="button" (click)="confirmLangChange()" class="btn btn-default">Confirm</button>
+        <button type="button" (click)="onCloseHandled()" class="btn btn-default">Cancel</button>
+      </div>
+    </div>
+
+  </div>
+</div>

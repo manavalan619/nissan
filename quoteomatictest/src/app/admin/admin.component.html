@@ -1,0 +1,25 @@
+<div class="dashboardcard">
+  <div class="row">
+    <div class="card cardmobile">
+      <div class="card-header">
+        <h2>User Management</h2>
+      </div>
+      <div class="card-body">
+        <img class="adminimg" src="assets/img/colleagues.png" routerLink="/usermanagement">
+        <!-- <a routerLink="/usermanagement" class="btn btn-primary">{{'source.userManagement' | i18next}}</a> -->
+      </div>
+    </div>
+
+    <div class="card cardmobile">
+      <div class="card-header">
+        <h2>WCMX-acoustic</h2>
+      </div>
+      <div class="card-body">
+        <img class="adminimg" src="assets/img/petroleum.png" (click)="Extractor()">
+        <!-- <a routerLink="/usermanagement" class="btn btn-primary">{{'source.userManagement' | i18next}}</a> -->
+      </div>
+    </div>
+    <ngx-spinner bdColor="rgba(146,105,105,0.5)" size="large" color="#db1313" type="pacman" [fullScreen]="true">
+      <p style="color: white"> Extracting... </p>
+    </ngx-spinner>
+  </div>

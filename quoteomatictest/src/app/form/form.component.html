@@ -1,0 +1,175 @@
+<div class="container top_align">
+    <!-- <div class="alignment">
+        <div class="form-group row align-items-center form">
+            <div class="col-md-6">
+                <button class="btn btn-primary btn_color btn_width" routerLink="/access-system" color="primary">Access to
+                    systems
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary btn_color btn_width" routerLink="/new-dealer" color="primary">New dealer
+                    User account
+                </button>
+            </div>
+        </div>
+        <div class="form-group row form">
+            <div class="col-md-6">
+                <button class="btn btn-primary btn_color btn_width" routerLink="/error-report" color="primary">Error in
+                    application
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary btn_color btn_width" routerLink="/new-supplier" color="primary">New Supplier
+                    account
+                </button>
+            </div>
+        </div>
+    </div> -->
+    <div class="card-body">
+        <form>
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-10">
+                    <label for="tssavppercentage">Incident Number : {{incidentNumber}}</label>
+                </div>
+                
+            </div>
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-4">
+                    <label for="tssavppercentage">Caller</label>
+                    <input type="text" class="form-control" [(ngModel)]="ticket.caller" 
+                    [ngModelOptions]="{standalone: true}" name="caller">
+                </div>
+                <div class="form-group mx-auto col-md-4">
+                    <label for="tssavpcoverage">Contact Type</label>
+                    <select class="custom-select" [(ngModel)]="ticket.contact_type" 
+                    [ngModelOptions]="{standalone: true}" id="personal_title" name="contact_type">
+                    <option>--None--</option>
+                    <option>Email</option>
+                    <option>Phone</option>
+                    <option>Self-service</option>
+                    <option>Walk-in</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-4">
+                    <label for="clientname">Category</label>
+                    <select class="custom-select" [(ngModel)]="ticket.category"
+                    [ngModelOptions]="{standalone: true}" id="personal_title" name="category">
+                    <option>Inquiry/Help</option>
+                    <option>Hardware</option>
+                    <option>Software</option>
+                    <option>Network</option>
+                    <option>Database</option>
+                    </select>
+                </div>
+                <div class="form-group mx-auto col-md-4">
+                    <label for="avs">State</label>
+                    <select class="custom-select" [(ngModel)]="ticket.state" 
+                    [ngModelOptions]="{standalone: true}" id="personal_title" name="state">
+                    <option>New</option>
+                    <option>In Progress</option>
+                    <option>On Hold</option>
+                    <option>Resolved</option>
+                    <option>Closed</option>
+                    <option>Cancelled</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-4">
+                    <label for="clientname">Sub Category</label>
+                    <select class="custom-select" [(ngModel)]="ticket.subcategory" 
+                    [ngModelOptions]="{standalone: true}" id="personal_title" name="sub_category">
+                    <option>--None--</option>
+                    <option>Antivirus</option>
+                    <option>Email</option>
+                    <option>Internet Application</option>
+                    </select>
+                </div>
+                <div class="form-group mx-auto col-md-4">
+                    <label for="flexhours">Impact</label>
+                    <select class="custom-select" [(ngModel)]="ticket.impact" 
+                    [ngModelOptions]="{standalone: true}" id="personal_title" name="impact">
+                    <option>1-High</option>
+                    <option>2-Medium</option>
+                    <option>3-Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-4">
+                    <label for="costperflexhour">Service</label>
+                    <input type="text" [(ngModel)]="ticket.service" 
+                    [ngModelOptions]="{standalone: true}" class="form-control" name="service">
+                </div>
+                <div class="form-group mx-auto col-md-4">
+                    <label for="flexhours">Urgency</label>
+                    <select class="custom-select" [ngModelOptions]="{standalone: true}" 
+                    [(ngModel)]="ticket.urgency" name="quote.urgency">
+                    <option>1-High</option>
+                    <option>2-Medium</option>
+                    <option>3-Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-4">
+                    <label for="tssavppercentage">Configuration Item</label>
+                    <input type="text" [(ngModel)]="ticket.cmdb_ci"
+                    [ngModelOptions]="{standalone: true}"class="form-control" name="configuration">
+                </div>
+                <div class="form-group mx-auto col-md-4">
+                    <label for="flexhours">Assignment Group</label>
+                    <input type="text" [(ngModel)]="ticket.assignment_group"
+                    [ngModelOptions]="{standalone: true}"class="form-control" name="assignment_group">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-4">
+                    <label for="flexhours">Assigned to</label>
+                    <input type="text" [(ngModel)]="ticket.assigned_to"
+                    [ngModelOptions]="{standalone: true}" class="form-control" name="assigned_to">
+                </div>
+                <div class="form-group mx-auto col-md-4">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-10">
+                    <label for="flexhours">Short Description</label>
+                    <input type="text" [(ngModel)]="ticket.short_description"
+                    [ngModelOptions]="{standalone: true}"class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-10">
+                    <label for="flexhours">Description</label>
+                    <textarea type="text" [(ngModel)]="ticket.description" class="form-control"
+                    [ngModelOptions]="{standalone: true}" id="flexhours" name="quote.Flex_Hours"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group mx-auto col-md-4">
+                    
+                </div>
+                <div class="form-group mx-auto col-md-4">
+                    
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="mx-auto col-md-4">
+                </div>
+                <div class="mx-auto col-md-7">
+                    <button type="button" *ngIf="!sysId" class="btn btn-primary mr-2 my-2" (click)="submit()">Submit</button>
+                    <button type="button" *ngIf="sysId" class="btn btn-primary mr-2 my-2" (click)="update()">Update</button>
+                    <button type="button" *ngIf="sysId" class="btn btn-primary mr-2 my-2" (click)="delete()">Delete</button>
+                    <button type="button" class="btn btn-primary mr-2 my-2" (click)="cancel()">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

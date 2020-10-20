@@ -1,0 +1,169 @@
+// Custom css added //
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    .spacing {
+        width: 91% !important;
+    }
+
+    .container {
+        width: 104%;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .spacing {
+        width: 91% !important;
+    }
+
+    .container {
+        width: 104%;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+
+    .card-mobile-res {
+        width: 100vh;
+    }
+
+    .card-align-mob-res {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .spacing {
+        width: 91% !important;
+    }
+
+    .container {
+        width: 104%;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 301px) and (max-width: 360px) {
+    .spacing {
+        width: 91% !important;
+    }
+
+    .container {
+        width: 104%;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+
+}
+
+// Wordpress css added below //
+.gep-ibmthirdtag {
+    background-color: rgb(249, 249, 249);
+}
+
+.takata-call {
+    margin-top: -302px;
+}
+
+.takata {
+    color: #000;
+    background: 0 0;
+    font-size: 36px;
+    line-height: 32px;
+    padding-bottom: 15px;
+    letter-spacing: .11px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.link-group {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.takata-primary {
+    padding: .8571428571em 45px .8571428571em 20px;
+    border: 1px solid #c3002f;
+    background: #c3002f;
+    color: #fff;
+    font-family: "Nissan Regular", "Nissan Regular", Verdana, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: .875em;
+    line-height: 1.28;
+    position: relative;
+    margin-left: 500px;
+
+}
+
+.announce-card {
+    width: 148px;
+    height: 160px;
+    background-color: #292424;
+}
+
+.announce-row-design {
+    padding-bottom: 0px;
+}
+
+.card-footer {
+    padding-top: 2.5px;
+    padding-bottom: 3px;
+    margin-left: 0px;
+    background-color: #2a2c33;
+}
+
+.card-footer-btn {
+    color: white;
+    background-color: #F7255A;
+}
+
+h3 {
+    color: #000 !important;
+}
+
+.card {
+    width: 28%;
+}
+
+.spacing {
+    width: 31%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.container {
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .container{
+        width: 100%!important;
+    }
+    .spacing {
+        margin-left: unset !important;
+    }
+     .spacing {
+        margin-left: unset !important;
+        margin-top: 10px !important;
+    }
+
+    .align {
+        margin-left: unset !important;
+        text-align: center !important;
+    }
+    .row{
+        margin-right:  unset !important;
+        margin-left: unset !important;
+        padding-left: 15px!important;
+    }
+   
+}
